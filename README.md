@@ -33,7 +33,7 @@ a pass, meaning that the list has become fully sorted. The algorithm, which is a
 for the way the larger elements "bubble" up to the top of the list.</p>
 
 <p>Bubble sort has a worst-case and average complexity of <b>O(n^2)</b>. This makes it a slow algorithm compared
-to other sorting algorithms.</p>
+to other sorting algorithms. Below is a pseudocode implementation of the algorithm.</p>
 
 <pre>
 procedure bubbleSort(A : list of sortable items)
