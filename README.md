@@ -19,3 +19,35 @@ worst-case time complexity of an algorithm.
 
 Big O Notation in Data Structure describes the upper bound of an algorithm's runtime. It 
 calculates the time and amount of memory needed to execute the algorithm for an input value.</p>
+
+<h2>Sorting Algorithms</h2>
+<p>A sorting algorithm is an algorithm that puts elements of a list into an order. It is used to
+ rearrange a given array or list of elements according to a comparison operator on the elements.
+ The comparison operator is used to decide the new order of elements in the respective data structure.</p>
+
+<h3>1. Bubble Sort</h3>
+<p>Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps 
+through the input list element by element, comparing the current element with the one after it, swapping 
+their values if needed. These passes through the list are repeated until no swaps had to be performed during 
+a pass, meaning that the list has become fully sorted. The algorithm, which is a comparison sort, is named 
+for the way the larger elements "bubble" up to the top of the list.</p>
+
+<p>Bubble sort has a worst-case and average complexity of <b>O(n^2)</b>. This makes it a slow algorithm compared
+to other sorting algorithms.</p>
+
+<pre>
+procedure bubbleSort(A : list of sortable items)
+    n := length(A)
+    repeat
+        swapped := false
+        for i := 1 to n-1 inclusive do
+            /* if this pair is out of order */
+            if A[i-1] > A[i] then
+                /* swap them and remember something changed */
+                swap(A[i-1], A[i])
+                swapped := true
+            end if
+        end for
+    until not swapped
+end procedure
+</pre>
