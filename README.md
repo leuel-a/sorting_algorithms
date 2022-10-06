@@ -2,7 +2,7 @@
 
 <h2>Big O Notation</h2>
 <p>Big Oh notation is a relative representation of the complexity of an algorithm.
-A method of solving these is called an <b>algorithm</b>. BigOh (in its simplest form)
+A method of solving problems is called an <b>algorithm</b>. BigOh (in its simplest form)
  reduces the comparison between algorithms to a single variable. That variable is chosen
  based on observations or assumptions.</p>
 
