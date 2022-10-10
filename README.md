@@ -62,7 +62,7 @@ The algorithm maintains two subarrays in a given array.
 	2.The remaining subarray was unsorted.
 
 In every iteration of the selection sort, the minimum element (considering ascending order) from the unsorted subarray
- is picked and moved to the sorted subarray.  The time complexity of Selection Sort is O(N2) as there are two nested loops.
+ is picked and moved to the sorted subarray.  The time complexity of Selection Sort is <b>O(n^2)</b> as there are two nested loops.
 </p>
 
 <pre>
