@@ -58,8 +58,8 @@ end procedure
 
 The algorithm maintains two subarrays in a given array.
 
-	1. The subarray which already sorted. 
-	2. The remaining subarray was unsorted.
+	1.The subarray which already sorted. 
+	2.The remaining subarray was unsorted.
 
 In every iteration of the selection sort, the minimum element (considering ascending order) from the unsorted subarray
  is picked and moved to the sorted subarray. 
@@ -69,11 +69,9 @@ In every iteration of the selection sort, the minimum element (considering ascen
 procedure selection sort 
    list  : array of items
    n     : size of list
-
    for i = 1 to n - 1
    /* set current element as minimum*/
       min = i    
-  
       /* check the element to be minimum */
 
       for j = i+1 to n 
@@ -81,13 +79,11 @@ procedure selection sort
             min = j;
          end if
       end for
-
       /* swap the minimum element with the current element*/
       if indexMin != i  then
          swap list[min] and list[i]
       end if
    end for
-	
 end procedure
 
 </pre>
