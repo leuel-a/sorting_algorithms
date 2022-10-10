@@ -82,8 +82,8 @@ procedure selection sort
       /* swap the minimum element with the current element*/
       if indexMin != i  then
          swap list[min] and list[i]
-      end if
-   end for
+end if
+end for
 end procedure
 
 </pre>
