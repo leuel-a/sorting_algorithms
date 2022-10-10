@@ -70,7 +70,8 @@ procedure selection sort
    list  : array of items
    n     : size of list
    for i = 1 to n - 1
-   /* set current element as minimum*/
+   
+   // set current element as minimum 
       min = i    
       /* check the element to be minimum */
 
@@ -82,8 +83,9 @@ procedure selection sort
       /* swap the minimum element with the current element*/
       if indexMin != i  then
          swap list[min] and list[i]
-end if
-end for
+	
+	end if
+      end for
 end procedure
 
 </pre>
