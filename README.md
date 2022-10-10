@@ -76,7 +76,7 @@ selectionSort(array, size)
 end selectionSort
 </pre>
 
-<h3>Insertion Sort</h3>
+<h3>3. Insertion Sort</h3>
 <p>Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time by comparisons. 
 Insertion sort iterates, consuming one input element each repetition, and grows a sorted output list. At each iteration, insertion
  sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It 
@@ -87,7 +87,7 @@ Sorting is typically done in-place, by iterating up the array, growing the sorte
  If larger, it leaves the element in place and moves to the next. If smaller, it finds the correct position within the sorted list, 
 shifts all the larger values up to make a space, and inserts into that correct position.</h3>
 
-<p>Pseudocode of the complete algorithm follows:</p>
+<p>Pseudocode of the complete algorithm follows, where arrays are zero-based:</p>
 <pre>
 i ← 1
 while i < length(A)
