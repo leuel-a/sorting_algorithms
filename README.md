@@ -64,20 +64,13 @@ The algorithm maintains two subarrays in a given array.
 In every iteration of the selection sort, the minimum element (considering ascending order) from the unsorted subarray
  is picked and moved to the sorted subarray. 
 
-<p>Pseudocode for selection sort:</p>
 <pre>
-	for (i = 0 ; i < n-1 ; i++)
-	{
-		index = i;
-
-		for(j = i+1 ; j < n ; j++)
-		{
-			if(A[j] < A[index])
-			index = j;
-		}
-		
-		temp = A[i];
-		A[i] = A[index];
-		A[index] = temp;
-	}
+selectionSort(array, size)
+  repeat (size - 1) times
+  	set the first unsorted element as the minimum
+  	for each of the unsorted elements
+    		if element < currentMinimum
+      			set element as new minimum
+  	swap minimum with first unsorted position
+end selectionSort
 </pre>
