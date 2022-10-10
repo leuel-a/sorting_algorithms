@@ -51,3 +51,43 @@ procedure bubbleSort(A : list of sortable items)
     until not swapped
 end procedure
 </pre>
+
+<h3>2. Selection Sort</h3>
+<p>The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
+ from the unsorted part and putting it at the beginning. 
+
+The algorithm maintains two subarrays in a given array.
+
+	1. The subarray which already sorted. 
+	2. The remaining subarray was unsorted.
+
+In every iteration of the selection sort, the minimum element (considering ascending order) from the unsorted subarray
+ is picked and moved to the sorted subarray. 
+
+<p>Pseudocode for selection sort:</p>
+<pre>
+procedure selection sort 
+   list  : array of items
+   n     : size of list
+
+   for i = 1 to n - 1
+   /* set current element as minimum*/
+      min = i    
+  
+      /* check the element to be minimum */
+
+      for j = i+1 to n 
+         if list[j] < list[min] then
+            min = j;
+         end if
+      end for
+
+      /* swap the minimum element with the current element*/
+      if indexMin != i  then
+         swap list[min] and list[i]
+      end if
+   end for
+	
+end procedure
+
+</pre>
