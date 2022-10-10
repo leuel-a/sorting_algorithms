@@ -66,26 +66,18 @@ In every iteration of the selection sort, the minimum element (considering ascen
 
 <p>Pseudocode for selection sort:</p>
 <pre>
-procedure selection sort 
-   list  : array of items
-   n     : size of list
-   for i = 1 to n - 1
-   
-   // set current element as minimum 
-      min = i    
-      // check the element to be minimum 
+	for (i = 0 ; i < n-1 ; i++)
+	{
+		index = i;
 
-      for j = i+1 to n 
-         if list[j] < list[min] then
-            min = j;
-         end if
-      end for
-      // swap the minimum element with the current element
-      if indexMin != i  then
-         swap list[min] and list[i]
-	
-	end if
-      end for
-end procedure
-
+		for(j = i+1 ; j < n ; j++)
+		{
+			if(A[j] < A[index])
+			index = j;
+		}
+		
+		temp = A[i];
+		A[i] = A[index];
+		A[index] = temp;
+	}
 </pre>
