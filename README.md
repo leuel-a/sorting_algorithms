@@ -73,14 +73,14 @@ procedure selection sort
    
    // set current element as minimum 
       min = i    
-      /* check the element to be minimum */
+      // check the element to be minimum 
 
       for j = i+1 to n 
          if list[j] < list[min] then
             min = j;
          end if
       end for
-      /* swap the minimum element with the current element*/
+      // swap the minimum element with the current element
       if indexMin != i  then
          swap list[min] and list[i]
 	
