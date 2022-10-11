@@ -27,38 +27,28 @@ void quick_sort(int *array, size_t size)
  */
 size_t lomuto_partition(int *array, size_t size, int start, int end)
 {
-	int tempPivot, i, pivot;
+	int pIndex, i;
 
-	tempPivot = start - 1;
-	pivot = array[end];
-	for (i = start; i < end - 1; i++)
+	pIndex = start - 1;
+	for (i = start; i < end; i++)
 	{
-		if (array[i] <= pivot)
+		if (array[i] <= array[end])
 		{
-			tempPivot++;
-			swap(&array[tempPivot], &array[i]);
-			print_array(array, size);
+			pIndex++;
+			if (pIndex != i)
+			{
+				swap(&array[pIndex], &array[i]);
+				print_array(array, size);
+			}
 		}
 	}
-	tempPivot++;
-	swap(&array[tempPivot], &array[end]);
-	print_array(array, size);
-	return (tempPivot);
-}
-
-/**
- * swap - this function swaps two values of an array
- *
- * @a: the first value
- * @b: the second value
- *
- * Return: Nothing
- */
-void swap(int *a, int *b)
-{
-	int temp = *a;
-	*a = *b;
-	*b = temp;
+	pIndex++;
+	if (pIndex != end)
+	{
+		swap(&array[pIndex], &array[end]);
+		print_array(array, size);
+	}
+	return (pIndex);
 }
 
 /**
@@ -83,4 +73,19 @@ void lomuto_sort(int *array, size_t size, int start, int end)
 		lomuto_sort(array, size, start, pIndex - 1);
 		lomuto_sort(array, size, pIndex + 1, end);
 	}
+}
+
+/**
+ * swap - this function swaps two values of an array
+ *
+ * @a: the first value
+ * @b: the second value
+ *
+ * Return: Nothing
+ */
+void swap(int *a, int *b)
+{
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
