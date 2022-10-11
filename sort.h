@@ -25,8 +25,8 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void swap_int(int *xp, int *yp);
 void quick_sort(int *array, size_t size);
-int lomuto_partition(int *array, size_t size, int start, int end);
 void lomuto_sort(int *array, size_t size, int start, int end);
-void swap(int *x, int *y);
+void swap(int *a, int *b);
+size_t lomuto_partition(int *array, size_t size, int start, int end);
 
 #endif
