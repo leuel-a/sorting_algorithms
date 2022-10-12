@@ -12,7 +12,9 @@
 void counting_sort(int *array, size_t size)
 {
 	int max = 0, *count, i, *sorted;
-
+	
+	if (size < 2 || !array)
+		return;
 	max = max_array_element(array, size);
 	count = malloc(sizeof(int) * (max + 1));
 	sorted = malloc(sizeof(int) * size);
