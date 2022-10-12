@@ -12,7 +12,7 @@
 void counting_sort(int *array, size_t size)
 {
 	int max = 0, *count, i, *sorted;
-	
+
 	if (size < 2 || !array)
 		return;
 	max = max_array_element(array, size);
@@ -29,7 +29,7 @@ void counting_sort(int *array, size_t size)
 	for (i = 0; i < (int)size; i++)
 	{
 		sorted[count[array[i]] - 1] = array[i];
-		count[array[i]]++;
+		count[array[i]]--;
 	}
 
 	for (i = 0; i < (int)size; i++)
