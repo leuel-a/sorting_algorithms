@@ -28,5 +28,7 @@ void quick_sort(int *array, size_t size);
 void lomuto_sort(int *array, size_t size, int start, int end);
 void swap(int *a, int *b);
 size_t lomuto_partition(int *array, size_t size, int start, int end);
+void counting_sort(int *array, size_t size);
+int max_array_element(int *array, size_t size);
 
 #endif
